@@ -9,11 +9,11 @@
   --ink-faint: #6b7280;
   --line: rgba(17, 24, 39, 0.1);
   --line-strong: rgba(17, 24, 39, 0.16);
-  --accent: #8b5cf6;
-  --accent-dark: #7c3aed;
-  --accent-light: #c4b5fd;
-  --accent-soft: rgba(139, 92, 246, 0.12);
-  --accent-soft-2: rgba(139, 92, 246, 0.22);
+  --accent: #6d28d9;
+  --accent-dark: #5b21b6;
+  --accent-light: #6d28d9;
+  --accent-soft: rgba(109, 40, 217, 0.1);
+  --accent-soft-2: rgba(109, 40, 217, 0.22);
   --white: #ffffff;
 
   --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -24,8 +24,8 @@
   --radius-m: 14px;
   --radius-l: 22px;
 
-  --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.35), 0 8px 24px rgba(0, 0, 0, 0.35);
-  --shadow-lift: 0 8px 20px rgba(0, 0, 0, 0.45), 0 24px 50px rgba(139, 92, 246, 0.16);
+  --shadow-soft: 0 1px 2px rgba(17, 24, 39, 0.08), 0 8px 24px rgba(17, 24, 39, 0.08);
+  --shadow-lift: 0 8px 20px rgba(17, 24, 39, 0.12), 0 24px 50px rgba(109, 40, 217, 0.1);
 }
 
 * { box-sizing: border-box; }
@@ -177,16 +177,16 @@ img { max-width: 100%; display: block; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 10, 18, 0);
+  background: rgba(245, 247, 251, 0);
   border-bottom: 1px solid transparent;
   transition: background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .nav--scrolled {
-  background: rgba(10, 10, 18, 0.82);
+  background: rgba(255, 255, 255, 0.94);
   backdrop-filter: blur(10px);
   border-bottom-color: var(--line);
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 10px 30px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 1px 0 rgba(17, 24, 39, 0.06), 0 10px 30px rgba(17, 24, 39, 0.08);
 }
 
 .nav__inner {
@@ -542,18 +542,18 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   gap: 10px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--white);
+  border: 1px solid var(--line-strong);
   border-radius: 100px;
   padding: 11px 20px 11px 14px;
   white-space: nowrap;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  box-shadow: 0 2px 6px rgba(17, 24, 39, 0.04);
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .marquee__item:hover {
-  border-color: hsl(var(--hue) / 1);
-  box-shadow: var(--shadow-soft), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-soft);
   transform: translateY(-2px);
 }
 
@@ -563,22 +563,18 @@ img { max-width: 100%; display: block; }
   justify-content: center;
   width: 28px;
   height: 28px;
-  border-radius: 9px;
-  background: hsl(var(--hue) / 0.16);
-  color: hsl(var(--hue) / 1);
-  box-shadow: inset 0 0 0 1px hsl(var(--hue) / 0.32);
-  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
 }
 
 .marquee__icon svg {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
   display: block;
   flex-shrink: 0;
 }
 
 .marquee__item:hover .marquee__icon {
-  background: hsl(var(--hue) / 0.22);
   transform: scale(1.04);
 }
 
@@ -593,14 +589,12 @@ img { max-width: 100%; display: block; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 22px;
-  height: 22px;
-  border-radius: 7px;
-  background: hsl(var(--hue) / 0.14);
-  color: hsl(var(--hue) / 1);
+  width: 20px;
+  height: 20px;
+  color: inherit;
   font-family: var(--font-mono);
   font-weight: 700;
-  font-size: 12px;
+  font-size: 15px;
 }
 
 @keyframes marquee-scroll {
@@ -1376,7 +1370,8 @@ img { max-width: 100%; display: block; }
 /* ========== FOOTER ========== */
 .footer {
   background: var(--bg-deep);
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--ink-soft);
+  border-top: 1px solid var(--line);
   padding: 40px 0;
 }
 
@@ -1391,20 +1386,20 @@ img { max-width: 100%; display: block; }
 .footer__name {
   font-size: 17px;
   font-weight: 800;
-  color: #fff;
+  color: var(--ink);
   margin-bottom: 4px;
 }
 
 .footer__tag {
   font-size: 13px;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--ink-soft);
 }
 
 .footer__right {
   text-align: right;
   font-size: 12.5px;
   line-height: 1.7;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--ink-faint);
 }
 
 @media (max-width: 560px) {
