@@ -13,9 +13,8 @@ export default function Certification() {
           <span className="cert-card__icon"><BadgeCheck size={22} strokeWidth={1.9} /></span>
           <div>
             <h3 className="cert-card__title">Digital Marketing Certification</h3>
-            <p className="cert-card__org">Shiksha Simple Learn, Madurai</p>
+            <p className="cert-card__org">Shiksha Simple Learn, Madurai | Jul 2025–Oct 2025</p>
           </div>
-          <span className="cert-card__period">Jul 2025 &ndash; Oct 2025</span>
         </div>
       </div>
     </section>

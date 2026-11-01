@@ -13,9 +13,8 @@ export default function Education() {
           <span className="edu-card__icon"><GraduationCap size={22} strokeWidth={1.9} /></span>
           <div>
             <h3 className="edu-card__title">B.Sc. Physics</h3>
-            <p className="edu-card__org">Mannar Thirumalai Naicker College, Madurai</p>
+            <p className="edu-card__org">Mannar Thirumalai Naicker College, Madurai | 2022–2025</p>
           </div>
-          <span className="edu-card__period">2022 &ndash; 2025</span>
         </div>
       </div>
     </section>

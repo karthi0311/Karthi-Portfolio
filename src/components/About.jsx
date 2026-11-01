@@ -15,13 +15,14 @@ export default function About() {
           <p className="eyebrow">About Me</p>
           <h2>About Me</h2>
           <p className="about__p">
-            I'm a Digital Marketing Executive focused on SEO, Local SEO, Google Business Profile,
-            Google Ads, Meta Ads, and social media marketing. I enjoy using research and data to
-            improve online visibility and solve digital marketing challenges.
-          </p>
-          <p className="about__p">
-            I'm continuously learning and looking for opportunities to grow, contribute, and
-            develop my skills as a digital marketing professional.
+            I am a results-driven Digital Marketing Executive with hands-on experience in SEO, social
+            media management, and Meta Ads campaigns. My skills include keyword research, on-page
+            SEO, technical SEO, Local SEO, Google Business Profile optimization, website performance
+            analysis, and lead generation through paid social campaigns. I work with Google
+            Analytics (GA4), Google Tag Manager, conversion tracking, Meta Pixel, Google Search
+            Console, Screaming Frog, SEMrush, and Ahrefs. I also have working knowledge of Google
+            Ads and a strong foundation in HTML for technical SEO implementation. I hold a B.Sc. in
+            Physics from Mannar Thirumalai Naicker College, Madurai.
           </p>
         </div>
 

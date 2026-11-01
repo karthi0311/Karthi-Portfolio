@@ -10,23 +10,23 @@ export default function Hero() {
           <p className="hero__hello">Hello, I'm</p>
           <h1 className="hero__name">Karthi S</h1>
           <p className="hero__title">Digital Marketing Executive</p>
-          <p className="hero__headline">SEO &middot; Local SEO &middot; Google Ads &middot; Meta Ads</p>
+          <p className="hero__headline">SEO, Meta Ads &amp; Google Ads</p>
 
           <div className="hero__meta">
-            <span className="hero__location"><MapPin size={14} strokeWidth={2.2} /> Madurai, Tamil Nadu</span>
+            <span className="hero__location"><MapPin size={14} strokeWidth={2.2} /> Madurai, Tamil Nadu, India</span>
             <span className="hero__badge">
               <span className="hero__dot" /> Open to Digital Marketing Opportunities
             </span>
           </div>
 
           <p className="hero__desc">
-            I'm a Digital Marketing Executive focused on SEO, Local SEO, Google Business Profile,
-            Google Ads, Meta Ads, and social media marketing. I enjoy using research and data to
-            improve online visibility and solve digital marketing challenges.
+            I help improve online visibility and digital campaign performance through SEO, social
+            media marketing, paid social campaigns, and data-driven website analysis.
           </p>
           <p className="hero__desc">
-            I'm continuously learning and looking for opportunities to grow, contribute, and
-            develop my skills as a digital marketing professional.
+            I have hands-on experience in SEO, social media management, and Meta Ads campaigns,
+            along with practical knowledge of GA4, Google Tag Manager, conversion tracking, and Meta
+            Pixel. I also have foundational knowledge of Google Ads.
           </p>
 
           <div className="hero__actions">

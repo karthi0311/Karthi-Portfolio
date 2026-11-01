@@ -2,19 +2,45 @@ import { SearchCheck, Target, BarChart3 } from 'lucide-react';
 
 const GROUPS = [
   {
-    title: 'SEO & Search',
+    title: 'SEO & Content',
     icon: <SearchCheck size={20} strokeWidth={2} />,
-    items: ['SEO', 'Local SEO', 'Google Business Profile', 'Keyword Research', 'Competitor Research', 'Google Search Console'],
+    items: [
+      'Keyword Research',
+      'On-Page SEO',
+      'Technical SEO',
+      'Local SEO',
+      'Google Business Profile Optimization',
+      'Content Optimization',
+      'Competitor Analysis',
+    ],
   },
   {
-    title: 'Paid Advertising & Social Media',
+    title: 'Paid Media & Social',
     icon: <Target size={20} strokeWidth={2} />,
-    items: ['Google Ads', 'Meta Ads', 'Social Media Marketing'],
+    items: [
+      'Meta Ads Management',
+      'Meta Pixel',
+      'Google Ads (Basics)',
+      'Lead Generation Campaigns',
+      'Social Media Marketing',
+      'Meta Business Suite',
+    ],
   },
   {
     title: 'Analytics & Technical',
     icon: <BarChart3 size={20} strokeWidth={2} />,
-    items: ['Google Analytics', 'HTML'],
+    items: [
+      'Google Analytics (GA4)',
+      'Google Tag Manager',
+      'Conversion Tracking',
+      'Google Search Console',
+      'Screaming Frog',
+      'SEMrush',
+      'Ahrefs',
+      'HTML',
+      'Canva',
+      'ChatGPT',
+    ],
   },
 ];
 

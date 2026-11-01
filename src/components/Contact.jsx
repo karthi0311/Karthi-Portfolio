@@ -30,19 +30,19 @@ export default function Contact() {
 
           <a
             className="contact-card"
-            href="https://www.linkedin.com/in/karthi-s-8a0b68366/"
+            href="https://www.linkedin.com/in/karthi-digital-marketer"
             target="_blank"
             rel="noopener noreferrer"
           >
             <span className="contact-card__icon"><FaLinkedinIn size={18} /></span>
             <span className="contact-card__label">LinkedIn</span>
-            <span className="contact-card__value">Karthi S</span>
+            <span className="contact-card__value">linkedin.com/in/karthi-digital-marketer</span>
           </a>
         </div>
 
         <a
           className="btn btn-primary contact__btn"
-          href="https://www.linkedin.com/in/karthi-s-8a0b68366/"
+          href="https://www.linkedin.com/in/karthi-digital-marketer"
           target="_blank"
           rel="noopener noreferrer"
         >
