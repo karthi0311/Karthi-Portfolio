@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
 
 :root {
-  --bg: #0a0a12;
-  --bg-alt: #121019;
-  --bg-deep: #050507;
-  --ink: #f5f4fa;
-  --ink-soft: #b6b2c6;
-  --ink-faint: #858195;
-  --line: rgba(255, 255, 255, 0.09);
-  --line-strong: rgba(255, 255, 255, 0.18);
+  --bg: #f5f7fb;
+  --bg-alt: #eef3ff;
+  --bg-deep: #e7ebf8;
+  --ink: #111827;
+  --ink-soft: #4b5563;
+  --ink-faint: #6b7280;
+  --line: rgba(17, 24, 39, 0.1);
+  --line-strong: rgba(17, 24, 39, 0.16);
   --accent: #8b5cf6;
   --accent-dark: #7c3aed;
   --accent-light: #c4b5fd;
-  --accent-soft: rgba(139, 92, 246, 0.16);
-  --accent-soft-2: rgba(139, 92, 246, 0.34);
-  --white: #15131f;
+  --accent-soft: rgba(139, 92, 246, 0.12);
+  --accent-soft-2: rgba(139, 92, 246, 0.22);
+  --white: #ffffff;
 
   --font-display: 'Manrope', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, monospace;
@@ -542,17 +542,18 @@ img { max-width: 100%; display: block; }
   display: flex;
   align-items: center;
   gap: 10px;
-  background: var(--white);
-  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 100px;
   padding: 11px 20px 11px 14px;
   white-space: nowrap;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.04);
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .marquee__item:hover {
   border-color: hsl(var(--hue) / 1);
-  box-shadow: var(--shadow-soft);
+  box-shadow: var(--shadow-soft), inset 0 1px 0 rgba(255, 255, 255, 0.06);
   transform: translateY(-2px);
 }
 
@@ -560,22 +561,32 @@ img { max-width: 100%; display: block; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 26px;
-  height: 26px;
-  color: var(--ink-faint);
-  transition: color 0.2s ease;
+  width: 28px;
+  height: 28px;
+  border-radius: 9px;
+  background: hsl(var(--hue) / 0.16);
+  color: hsl(var(--hue) / 1);
+  box-shadow: inset 0 0 0 1px hsl(var(--hue) / 0.32);
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.marquee__icon svg { width: 18px; height: 18px; }
+.marquee__icon svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+  flex-shrink: 0;
+}
 
 .marquee__item:hover .marquee__icon {
-  color: hsl(var(--hue) / 1);
+  background: hsl(var(--hue) / 0.22);
+  transform: scale(1.04);
 }
 
 .marquee__name {
   font-size: 13.5px;
   font-weight: 700;
   color: var(--ink);
+  letter-spacing: -0.01em;
 }
 
 .tool__mono {
